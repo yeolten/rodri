@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d14">
+  <title>RODRI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">◉</span> RODRI <span class="muted">/ ARCHIVO INTERACTIVO</span></div>
+    <div class="status"><span class="status-dot"></span> SISTEMA EN LÍNEA</div>
+  </header>
+
+  <main>
+    <section id="screen-intro" class="screen active">
+      <div class="eyebrow">ARCHIVO PERSONAL // R-001</div>
+      <div class="hero-grid">
+        <div>
+          <p class="overline">BIENVENIDO, SUJETO</p>
+          <h1><span class="name">RODRI</span><span class="accent">.</span></h1>
+          <p class="lead">Un pequeño universo de preguntas, recuerdos y sorpresas.<br>Un archivo preparado especialmente para vos.</p>
+          <div class="terminal">
+            <p><span class="terminal-prompt">&gt;</span> Identidad confirmada.</p>
+            <p><span class="terminal-prompt">&gt;</span> Curiosidad detectada.</p>
+            <p><span class="terminal-prompt">&gt;</span> Motivo de la prueba: <span class="orange">clasificado</span>.</p>
+          </div>
+          <button id="start-btn" class="button primary">INICIAR EXPERIMENTO <span>↗</span></button>
+          <p class="tiny muted">ADVERTENCIA: puede provocar una sonrisa inesperada.</p>
+        </div>
+        <div class="portal-scene" aria-label="Ilustración de un portal futurista">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="portal portal-blue"></div><div class="portal portal-orange"></div>
+          <div class="floor-grid"></div>
+          <div class="scene-label">CHAMBER 01 <span>•</span> READY</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="screen-game" class="screen">
+      <div class="game-head">
+        <div><div class="eyebrow" id="test-label">PRUEBA 01 / 03</div><h2 id="puzzle-title">La primera señal</h2></div>
+        <div class="progress-wrap"><span id="progress-text">0 / 3</span><div class="progress"><div id="progress-fill"></div></div></div>
+      </div>
+      <div class="game-card">
+        <div class="card-top"><span>MENSAJE RECUPERADO</span><span class="chip" id="chamber-chip">CHAMBER 01</span></div>
+        <div class="puzzle-symbol" id="puzzle-symbol">⌁</div>
+        <p id="puzzle-story" class="puzzle-story"></p>
+        <div id="puzzle-content"></div>
+        <div id="feedback" class="feedback" aria-live="polite"></div>
+        <div class="card-bottom"><span>◈ THINK. TEST. REPEAT.</span><span id="hint-toggle" role="button" tabindex="0">¿PISTA? <u>REVELAR</u></span></div>
+        <p id="hint-text" class="hint-text hidden"></p>
+      </div>
+      <div class="game-footer"><span>RODRI // EXPERIMENTO PERSONAL</span><span>PROGRESO GUARDADO EN ESTA SESIÓN</span></div>
+    </section>
+
+    <section id="screen-final" class="screen">
+      <div class="eyebrow">EXPERIMENTO COMPLETADO // ARCHIVO DESBLOQUEADO</div>
+      <div class="final-layout">
+        <div class="final-portal"><div class="final-ring"></div><div class="final-core">♥</div></div>
+        <div>
+          <p class="overline">MENSAJE PERSONAL PARA</p>
+          <h2 class="final-title">RODRI<span class="accent">.</span></h2>
+          <div class="message-paper">
+            <p>Hola jiji</p>
+            <p>La verdad es que quería hacer algo diferente por vos, algo que te sorprendiera un poquito y que, aunque sea por un ratito, te sacara una sonrisa.</p>
+            <p>Como todavía nos estamos conociendo, me pareció lindo hacer algo que fuera más allá de un regalo común.</p>
+            <p>No sé si te esperabas algo así JAJAJA, pero espero que te haya gustado la sorpresa</p>
+          </div>
+          <section class="response-box" id="response-box">
+            <div class="secret-heading"><span class="status-dot"></span> ARCHIVO 022 // RESPUESTA LIBRE</div>
+            <h3>Una última cosa, Rodri</h3>
+            <p>Esta vez no hay opciones correctas ni incorrectas. Escribí lo que quieras decir, preguntar o dejar registrado antes de cerrar el experimento. Este archivo es tuyo.</p>
+            <label for="free-response">MENSAJE DEL SUJETO</label>
+            <textarea id="free-response" rows="5" maxlength="1200" placeholder="Escribí tu respuesta acá..."></textarea>
+            <button id="save-response" class="button primary" type="button">GUARDAR RESPUESTA ↗</button>
+            <div id="response-result" class="response-result hidden" aria-live="polite"></div>
+            <p class="tiny muted">Cuando aparezca tu archivo final, hacé una captura de pantalla y mandásela a Micca 💗</p>
+          </section>
+          <button id="replay-btn" class="button secondary">VOLVER A JUGAR ↺</button>
+        </div>
+      </div>
+      <p class="tiny muted centered">FIN DEL EXPERIMENTO · ARCHIVO RODRI</p>
+    </section>
+  </main>
+
+  <footer class="footer"><span>FICTIONAL TEST ENVIRONMENT</span><span>BUILD 01.0.26 <span class="orange">■</span></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
